@@ -1,0 +1,171 @@
+/* Estilo geral */
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #fff0f5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Cabeçalho e navegação */
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+nav a {
+  font-weight: 500;
+  color: #b05a4f;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #6b302a;
+}
+
+/* Hero section */
+.hero {
+  background-color: #ffe4e1;
+  color: #6b302a;
+}
+
+/* Botão do WhatsApp */
+.btn-whatsapp {
+  background-color: #25d366;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+  background-color: #1ebe5d;
+  color: white;
+}
+
+/* Footer */
+footer {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Produtos */
+.card .card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.card .card-text {
+  font-size: 1.1rem;
+}
+
+/* Carrinho */
+.badge {
+  font-size: 0.75rem;
+  padding: 4px 8px;
+}
+
+/* Estilos para a página de login */
+.card {
+  border: none;
+  border-radius: 0px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn-google {
+  background: white;
+  border: 1px solid #ccc;
+  color: #444;
+}
+
+.btn-google:hover {
+  background-color: #f8f8f8;
+}
+
+.logo {
+  max-width: 150px;
+}
+
+  
+  nav a:hover {
+    color: #a84a3d;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: #fff7f3;
+  }
+  
+  .hero h2 {
+    font-size: 2rem;
+    color: #a84a3d;
+  }
+  
+  .produtos {
+    padding: 40px 20px;
+  }
+  
+  .produto {
+    border: 1px solid #f5d2c7;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 30px;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    text-align: center;
+  }
+  
+  .produto img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  .btn-whatsapp {
+    background-color: #25D366;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  
+  .btn-whatsapp:hover {
+    background-color: #1ebe5d;
+    text-decoration: none;
+    color: white;
+  }
+  
+  footer {
+    background: #fff0ea;
+    text-align: center;
+    padding: 20px;
+    color: #a05b7c;
+    margin-top: 40px;
+  }
+  .btn-pastel {
+  background-color: #e9c6c1; /* tom rosado claro */
+  color: #5c3a36; /* marrom suave */
+  border: 1px solid #e2a6a0;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-pastel:hover {
+  background-color: #e2a6a0;
+  color: white;
+  border-color: #d58e89;
+}
+
+.btn-outline-pastel {
+  background-color: white;
+  color: #b26e68;
+  border: 1px solid #d58e89;
+}
+
+.btn-outline-pastel:hover {
+  background-color: #f9e2df;
+  color: #5c3a36;
+}

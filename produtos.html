@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Produtos - Amigurumis da Iara</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+  <header class="py-3 px-4 d-flex justify-content-between align-items-center border-bottom bg-light-subtle">
+    <img src="./img/IMG-20230904-WA0029 (1).jpg" alt="Logo Amigurumis da Iara" class="rounded-3 img-fluid"
+    style="max-height: 60px; object-fit: contain;">
+    <nav class="d-flex gap-3">
+      <a href="index.html" class="text-decoration-none text-secondary">Início</a>
+      <a href="historia.html" class="text-decoration-none text-secondary">Nossa História</a>
+      <a href="contato.html" class="text-decoration-none text-secondary">Contato</a>
+    </nav>
+    <div id="carrinho-componente"></div>
+  <script>
+    fetch("componentes/carrinho.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("carrinho-componente").innerHTML = html;
+      });
+  </script>
+  </header>
+  
+  <main class="container py-5">
+    <h2 class="text-center mb-4">Nossos Produtos</h2>
+
+    <section class="mb-5">
+      <h4 class="text-muted mb-3">SANTINHAS</h4>
+      <div class="row" id="produtos-santinhas"></div>
+    </section>
+
+    <section class="mb-5">
+      <h4 class="text-muted mb-3">PET REALISTAS</h4>
+      <div class="row" id="produtos-pet"></div>
+    </section>
+
+    <section class="mb-5">
+      <h4 class="text-muted mb-3">KIDS</h4>
+      <div class="row" id="produtos-kids"></div>
+    </section>
+
+    <section>
+      <h4 class="text-muted mb-3">CHAVEIROS</h4>
+      <div class="row" id="produtos-chaveiros"></div>
+    </section>
+
+    <section>
+        <h4 class="text-muted mb-3">DIVERSOS</h4>
+        <div class="row" id="produtos-diversos"></div>
+      </section>
+  </main>
+
+  <footer class="text-center py-4 bg-light-subtle mt-5">
+    <p>&copy; 2025 Amigurumis da Iara. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="js/produtos.js"></script>
+</body>
+</html>

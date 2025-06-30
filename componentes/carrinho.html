@@ -1,0 +1,30 @@
+<!-- Botão do Carrinho -->
+<button type="button" class="btn btn-outline position-relative btn-outline-pastel" data-bs-toggle="modal"
+    data-bs-target="#modalCarrinho">
+    🛒 Carrinho
+    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+        id="contador-carrinho">0</span>
+</button>
+
+<!-- Modal do Carrinho -->
+<div class="modal fade" id="modalCarrinho" tabindex="-1" aria-labelledby="modalCarrinhoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content rounded-4 shadow-lg">
+            <div class="modal-header bg-light">
+                <h5 class="modal-title" id="modalCarrinhoLabel">🛒 Meu Carrinho</h5>
+                <button type="button" class="btn-close btn btn-outline-pastel" data-bs-dismiss="modal" aria-label="Fechar"></button>
+            </div>
+            <div class="modal-body">
+                <ul class="list-group mb-3" id="itens-carrinho"></ul>
+                <div class="d-flex justify-content-between align-items-center">
+                    <strong>Total:</strong>
+                    <span class="fw-bold text-danger fs-5">R$ <span id="total">0.00</span></span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Continuar comprando</button>
+                <button class="btn btn-success" id="finalizar">Finalizar pelo WhatsApp</button>
+            </div>
+        </div>
+    </div>
+</div>
