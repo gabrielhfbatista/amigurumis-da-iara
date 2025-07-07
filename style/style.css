@@ -190,14 +190,37 @@ footer {
 
 /* Legenda do carrossel com fundo suave */
 .carousel-caption {
-  background-color: rgba(255, 255, 255, 0.8);
-  color: #444;
-  border-radius: 12px;
-  padding: 1.5rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  background-color: rgba(255, 255, 255, 0.85);
+  color: #5c3a36;
+  border-radius: 0 0 12px 12px; /* apenas borda inferior arredondada */
+  padding: 0.75rem 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
   font-family: 'Quicksand', sans-serif;
-  bottom: 2rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
 }
+.carousel-caption h5 {
+  font-size: 1.2rem;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+  color: #a45c66;
+}
+
+.carousel-caption p {
+  font-size: 0.85rem;
+  margin-bottom: 0;
+  color: #7e5a5a;
+}
+.carousel-inner {
+  padding: 1rem 1.5rem; /* aumenta um pouco ao redor da imagem */
+  background-color: #fff6fa; /* tom pastel do site */
+  border-radius: 16px;
+  margin: 0 auto;
+  width: calc(50% - 0.5rem); /* deixa um pouco de borda lateral */
+}
+
 
 /* Remove borda azul padrão de botões */
 .btn-outline-pastel {
