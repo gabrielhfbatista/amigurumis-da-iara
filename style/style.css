@@ -171,19 +171,16 @@ footer {
 }
 /* Estilo para o carrossel */
 .carousel-container {
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
-  background-color: #fff6fa; /* tom pastel rosado */
   padding: 0;
-  margin: 2rem auto;
+  margin: 1rem auto;
   max-width: 900px;
 }
+
 
 /* Ajusta a imagem dentro do carrossel */
 .carousel-item img {
   width: 100%;
-  max-height: 70vh;
+  max-height: 60vh;
   object-fit: cover;
   border-radius: 0;
 }
@@ -214,13 +211,13 @@ footer {
   color: #7e5a5a;
 }
 .carousel-inner {
-  padding: 1rem 1.5rem; /* aumenta um pouco ao redor da imagem */
-  background-color: #fff6fa; /* tom pastel do site */
+  padding: 1rem 1.5rem;
+  background-color: #fff6fa;
   border-radius: 16px;
   margin: 0 auto;
-  width: calc(50% - 0.5rem); /* deixa um pouco de borda lateral */
+  width: calc(50% - 0.5rem); 
+  
 }
-
 
 /* Remove borda azul padrão de botões */
 .btn-outline-pastel {
@@ -239,4 +236,39 @@ footer {
   object-fit: contain;
   max-height: 70vh;
   width: 100%;
+}
+/* BOTÕES DE CONTROLE MAIS PRÓXIMOS E SEM CÍRCULO EXAGERADO */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none; /* remove o fundo branco visível */
+  opacity: 0.6;
+  z-index: 10;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 1;
+}
+
+/* Aproxima os botões da imagem */
+.carousel-control-prev {
+  left: 0px;
+}
+
+.carousel-control-next {
+  right: 10px;
+}
+
+/* Ícones menores e suaves */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-color: transparent;
+  filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.2));
 }
