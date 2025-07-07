@@ -169,3 +169,51 @@ footer {
   background-color: #f9e2df;
   color: #5c3a36;
 }
+/* Estilo para o carrossel */
+.carousel-container {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  background-color: #fff6fa; /* tom pastel rosado */
+  padding: 0;
+  margin: 2rem auto;
+  max-width: 900px;
+}
+
+/* Ajusta a imagem dentro do carrossel */
+.carousel-item img {
+  width: 100%;
+  max-height: 70vh;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+/* Legenda do carrossel com fundo suave */
+.carousel-caption {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #444;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  font-family: 'Quicksand', sans-serif;
+  bottom: 2rem;
+}
+
+/* Remove borda azul padrão de botões */
+.btn-outline-pastel {
+  border-color: #e0aeb1;
+  color: #a45c66;
+}
+
+.btn-outline-pastel:hover,
+.btn-outline-pastel:focus {
+  background-color: #f9d9df;
+  border-color: #d99aa3;
+  color: #7a3f47;
+}
+
+.carousel-item img {
+  object-fit: contain;
+  max-height: 70vh;
+  width: 100%;
+}

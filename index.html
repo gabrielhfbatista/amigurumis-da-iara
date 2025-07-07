@@ -22,27 +22,27 @@
             <a href="produtos.html" class="text-decoration-none text-secondary">Produtos</a>
             <a href="historia.html" class="text-decoration-none text-secondary">Nossa História</a>
             <a href="contato.html" class="text-decoration-none text-secondary">Contato</a>
-           
+
 
         </nav>
         <div class="d-flex align-items-center gap-2">
             <div id="carrinho-componente"></div>
             <a id="botao-usuario" href="login.html" class="btn btn-pastel">Entrar</a>
-          </div>
-        
-          <script>
+        </div>
+
+        <script>
             fetch("componentes/carrinho.html")
-              .then(res => res.text())
-              .then(html => {
-                document.getElementById("carrinho-componente").innerHTML = html;
-              });
-          </script>
-        </header>
+                .then(res => res.text())
+                .then(html => {
+                    document.getElementById("carrinho-componente").innerHTML = html;
+                });
+        </script>
+    </header>
 
 
 
     </header>
-   
+
 
     <section class="hero text-center py-5">
         <div class="container">
@@ -50,15 +50,59 @@
             <p class="lead">Amigurumis únicos feitos com amor e arte!</p>
         </div>
     </section>
-    <section class="hero text-white text-center d-flex align-items-center justify-content-center" style="
-  height: 80vh;
-  background: url('img/hero-amigurumis.jpg') center/cover no-repeat;
-">
-        <div class="bg-dark bg-opacity-50 p-4 rounded">
-            <h1 class="display-5">Feitos com amor e delicadeza</h1>
-            <p class="lead">Descubra nossos amigurumis encantadores e personalizados</p>
-            <a href="produtos.html" class="btn btn-light mt-3">Ver Coleção</a>
+    <section class="container my-5">
+        <div id="carouselExample" class="carousel slide carousel-container" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              
+      
+            <!-- Slide 1 -->
+            <div class="carousel-item active position-relative">
+              <a href="produtos.html">
+                <img src="img/Zoe.png" class="d-block w-100 pastel-img" alt="Amigurumi 1">
+                <div class="carousel-caption d-none d-md-block bg-white bg-opacity-75 rounded p-3 shadow">
+                  <h5 class="text-secondary">Feitos com carinho</h5>
+                  <p class="text-muted">Toque para ver nossos produtos</p>
+                </div>
+              </a>
+            </div>
+      
+            <!-- Slide 2 -->
+            <div class="carousel-item position-relative">
+              <a href="produtos.html">
+                <img src="img/Nossa Senhora de Aparecida.png" class="d-block w-100 pastel-img" alt="Amigurumi 2">
+                <div class="carousel-caption d-none d-md-block bg-white bg-opacity-75 rounded p-3 shadow">
+                  <h5 class="text-secondary">Santinhas</h5>
+                  <p class="text-muted">Feita com ternura e fé, cada Santinha carrega consigo uma mensagem de paz,
+                     proteção e amor. Um presente especial para abençoar lares e corações.</p>
+                </div>
+              </a>
+            </div>
+      
+            <!-- Slide 3 -->
+            <div class="carousel-item position-relative">
+              <a href="produtos.html">
+                <img src="img/Judocas.png" class="d-block w-100 pastel-img" alt="Amigurumi 3">
+                <div class="carousel-caption d-none d-md-block bg-white bg-opacity-75 rounded p-3 shadow">
+                  <h5 class="text-secondary">Coleção Kids</h5>
+                  <p class="text-muted">Bonecos encantadores para presentear 💖</p>
+                </div>
+              </a>
+            </div>
+      
+          </div>
+      
+          <!-- Controles -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carrossel-produtos" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carrossel-produtos" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+          </button>
         </div>
+      </section>
+      
     </section>
 
 
@@ -68,7 +112,7 @@
         <a class="btn-whatsapp" href="https://wa.me/5599999999999" target="_blank">Falar no WhatsApp</a>
     </section>
     <div id="carrinho-modal" class="container py-4" style="display: none;">
-        
+
         <h4>🛒 Seu Carrinho</h4>
         <ul id="itens-carrinho" class="list-group mb-3"></ul>
         <p><strong>Total: R$ <span id="total-carrinho">0.00</span></strong></p>
