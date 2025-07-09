@@ -4,8 +4,6 @@ function carregarProdutosDoStorage() {
 }
 // Verifica se o localStorage já tem produtos, se não, adiciona alguns  
   let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
-
-
   
   function mostrarProdutos() {
     const produtos = carregarProdutosDoStorage();
@@ -28,7 +26,6 @@ function carregarProdutosDoStorage() {
       container.appendChild(div);
     });
   }
-  
   
   function atualizarCarrinho() {
     const lista = document.getElementById('itens-carrinho');
@@ -54,6 +51,7 @@ function carregarProdutosDoStorage() {
       contador.innerText = totalItens;
     }
   }
+
   function adicionarCarrinho(index) {
     const produto = produtos[index];
     const itemExistente = carrinho.find(item => item.nome === produto.nome);
@@ -72,15 +70,13 @@ function carregarProdutosDoStorage() {
   function salvarCarrinho() {
     localStorage.setItem('carrinho', JSON.stringify(carrinho));
   }
+
   function removerItem(index) {
     carrinho.splice(index, 1);
     localStorage.setItem('carrinho', JSON.stringify(carrinho));
     salvarCarrinho();
     atualizarCarrinho();
   }
-
- 
-
 
   document.getElementById('finalizar').addEventListener('click', () => {
     const usuario = JSON.parse(localStorage.getItem('usuario'));
@@ -96,8 +92,6 @@ function carregarProdutosDoStorage() {
     const texto = encodeURIComponent(`Olá! Quero finalizar a compra dos seguintes produtos:\n\n${carrinho.map(i => i.nome).join('\n')}\n\nTotal: R$ ${total.toFixed(2)}`);
     window.open(`https://wa.me/5599999999999?text=${texto}`, '_blank');
   });
-  
-  
   
   mostrarProdutos();
   atualizarCarrinho();

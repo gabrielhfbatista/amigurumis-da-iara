@@ -29,9 +29,14 @@ function loginComGoogle() {
 
 // LOGIN COM E-MAIL E SENHA
 function loginComEmailSenha(email, senha) {
+    if(!email || !senha) {
+        alert("Por favor, preencha todos os campos.");//TODO: Melhorar mensagem de erro
+        return;
+    }
     auth.signInWithEmailAndPassword(email, senha)
         .then(result => {
             const user = result.user;
+            // Armazena o usuário no localStorage
             localStorage.setItem('usuario', JSON.stringify({
                 nome: user.email.split('@')[0],
                 email: user.email
@@ -43,6 +48,10 @@ function loginComEmailSenha(email, senha) {
 
 // REGISTRAR NOVO USUÁRIO
 function cadastrarEmailSenha(email, senha) {
+    if(!email || !senha) {
+        alert("Por favor, preencha todos os campos.");//TODO: Melhorar mensagem de erro
+        return;
+    }
     auth.createUserWithEmailAndPassword(email, senha)
         .then(result => {
             alert("Usuário criado com sucesso!");
